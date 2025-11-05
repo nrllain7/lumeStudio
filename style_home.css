@@ -1,0 +1,54 @@
+/* Hero Section with Background Image and Overlay */
+    .hero-section {
+      position: relative;
+      background-image: url('https://i.pinimg.com/1200x/1a/2f/f3/1a2ff39a26189762fefb60074246b385.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 150px 20px;
+      text-align: center;
+    }
+
+    /* Overlay */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4); /* semi-transparent dark overlay */
+      z-index: 0;
+    }
+
+    /* Ensure text appears above overlay */
+    .hero-section h1,
+    .hero-section p,
+    .hero-section a {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero button style */
+    .hero-section .btn-primary {
+      background-color: #60BDF0; 
+      border: none;
+      color: white;
+    }
+
+    .hero-section .btn-primary:hover {
+      background-color: #209CBD; /* darker green on hover */
+    }
+
+    /* Card image uniform size */
+    .card-img-top {
+      width: 100%;
+      height: 200px; /* set all images same height */
+      object-fit: cover; /* crop/fill image without distortion */
+    }
+	
+	
+	/* Navbar fix */
+    .navbar {
+      z-index: 10; /* make sure it is above section */
+    }

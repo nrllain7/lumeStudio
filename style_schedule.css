@@ -1,0 +1,158 @@
+
+ /* Header Tabs */
+    .days {
+      display: flex;
+      justify-content: center;
+      background-color: #000;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .day {
+      margin: 5px 8px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      color: #fff;
+      border: 1px solid #444;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .day.active {
+      background-color: #288DC9;
+      border-color: #fff;
+    }
+
+/* Schedule Table */
+.schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://i.pinimg.com/1200x/d7/14/e3/d714e35043612062b03be4171d756a5b.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  min-height: 400px;
+}
+
+.schedule table {
+  width: 90%;
+  max-width: 900px;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.schedule th, .schedule td {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  color: #fff;
+}
+
+.schedule th {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.join-btn {
+  background-color: #60BDF0;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #288DC9;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #bbb;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section p, .footer-section li {
+  line-height: 1.8;
+  font-size: 0.95em;
+}
+
+.footer-section .contact {
+  margin-bottom: 10px;
+}
+
+.footer-section input[type=email] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.footer-section button {
+  padding: 10px 20px;
+  background-color: #60BDF0;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.footer-section img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.social {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #999;
+}
+
+.social i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social i:hover {
+  color: #f15a24;
+}
+
+@media(max-width: 768px) {
+  .schedule table {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

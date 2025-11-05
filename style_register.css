@@ -1,0 +1,46 @@
+/* Full-page background image */
+    body {
+      background-image: url('https://i.pinimg.com/1200x/1a/2f/f3/1a2ff39a26189762fefb60074246b385.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 70px; /* offset for navbar */
+    }
+
+    /* Form container with semi-transparent background */
+    #registerForm {
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      background-color: rgba(255, 255, 255, 0.95);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    /* Form title */
+    #registerForm h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    /* Button styling */
+    .btn-primary {
+      background-color: #60BDF0;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #288DC9;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+      #registerForm {
+        padding: 30px 20px;
+      }
+    }
